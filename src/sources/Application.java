@@ -1,4 +1,6 @@
-package Sources;
+package sources;
+
+import sources.utils.Tipo;
 
 public class Application {
 	public static void main(String[] args) {
@@ -8,15 +10,15 @@ public class Application {
 		 */
 		
 		Matriz m = new Matriz();
-		int[][] matriz = m.preencherMatriz(5, 8);
+		Double[][] matriz = m.preencherMatriz(3, 3);
 		
 		m.plotarMatriz(matriz);
 		m.plotDiagonalPrincipal(matriz);
 		m.plotTermosDiagonalInferior(matriz);
 		
 		
-		Operacoes op = new OperacoesImpl();
+		OperacoesImpl op = new OperacoesImpl();
 		
-		op.Subtracao(matriz, 2, 3);
+		m.plotarMatriz(op.Operar(matriz, 1, 2, Tipo.SOMA));
 	}
 }
