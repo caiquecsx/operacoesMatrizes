@@ -15,7 +15,7 @@ public class Application {
 		m.plotTermosDiagonalInferior(matriz);
 		
 		
-		Operacoes op = new Operacoes();
+		Operacoes op = new OperacoesImpl();
 		
 		op.Subtracao(matriz, 2, 3);
 	}
